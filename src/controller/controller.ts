@@ -279,7 +279,7 @@ export class Controller extends events.EventEmitter<ControllerEventMap> {
 
         logger.info(`Adding install code for ${ieeeAddr}.`, NS);
 
-        await this.adapter.addInstallCode(ieeeAddr, adjustedKey);
+        await this.adapter.addInstallCode(ieeeAddr, key);
     }
 
     public async permitJoin(time: number, device?: Device): Promise<void> {
